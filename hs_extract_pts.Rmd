@@ -2,7 +2,9 @@
 title: "hs_extract_pts"
 author: "Tao Huang"
 date: "`r Sys.Date()`"
-output: html_document
+output:
+  html_document: default
+  pdf_document: default
 ---
 
 https://cu-esiil.github.io/data-library/remote_sensing/neon_hyperspectral/neon_hyperspectral/
@@ -15,7 +17,7 @@ The goal of neonhs is to make data from the National Ecological Observatory Netw
 
 library(neonhs)
 library(raster)
-install.packages("viridis")
+#install.packages("viridis")
 library(viridis)
 library(sp)
 library(tidyverse)
